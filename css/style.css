@@ -1,0 +1,42 @@
+table tr td  {
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+
+
+}
+h1 {
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+table {
+
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.box {
+	text-align: center;
+	font-size: 50px;
+}
+.box:hover {
+	background-color: black;	
+}
+
+button {
+	height: 50px;
+	width: 200px;	
+	font-size: 30px;
+	margin: auto;
+	display: block;
+}
+
+
+button:hover {
+	background-color: Black;
+	color: white;
+
+
+}
