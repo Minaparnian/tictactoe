@@ -31,6 +31,7 @@ button {
 	font-size: 30px;
 	margin: auto;
 	display: block;
+	
 }
 
 
@@ -40,3 +41,30 @@ button:hover {
 
 
 }
+
+
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  animation: zoomOut 4s;
+}
+
+.red {
+	background-color: red;
+	color: white;s
+}
+

@@ -13,13 +13,20 @@ What You've Learned
 
 By the time you submit this project, you will have covered new ground in many of the big themes of the course:
 
-Command Line: Practice interacting with the computer and navigating the filesystem from the command line.
+Command Line: 
+
+Practice interacting with the computer and navigating the filesystem from the command line.
 Source Control: Manage and interact with a git repository to store changes to code.
 Programming Fundamentals: Work with objects, constructors, events, while learning how to strategically solve problems and resolve errors.
 Web Fundamentals: Learn how communication happens over the internet, and how to structure, style, and animate documents within a browser. Also learn how to respond to actions your users take and the data they input into the browser.
-Browser Applications: Dive into CSS, Sass, and how to use libraries and frameworks to get lots of style for free.
+
+Browser Applications: 
+
+Dive into CSS, Sass, and how to use libraries and frameworks to get lots of style for free.
 Deployment: Host a static web site in a managed hosting environment.
 Products and Teams: Document your code and your code repository so others understand what you've built.
+
+
 Big Goals
 
 Build a web application from scratch, without a starter codebase
@@ -36,10 +43,14 @@ Render a game board in the browser
 Switch turns between X and O (or whichever markers you select)
 Visually display which side won if a player gets three in a row or show a draw/"cat’s game" if neither wins
 Include separate HTML / CSS / JavaScript files
-Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
+Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) 
+
+principles
+
 Use Javascript for DOM manipulation
 Deploy your game online, where the rest of the world can access it
 Use semantic markup for HTML and CSS (adhere to best practices)
+
 Bonus
 
 These are for extra credit! Don't focus on these until you've hit the core requirements.
