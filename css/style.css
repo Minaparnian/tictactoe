@@ -93,14 +93,14 @@ button:hover {
 		position: absolute;
 		top: 70px;
 		position: absolute;
-    top: 244px;
-    margin: -75px;
+    top: 470px;
+    margin: -30px;
 
 	}
 
 	table tr td {
-		width: 90px;
-		height: 90px;
+		width: 120px;
+		height: 120px;
 	}
 	button {
 		height: 25px;
