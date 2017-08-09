@@ -1,3 +1,8 @@
+body {
+	font-family: 'Aclonica', sans-serif;
+}
+
+
 table tr td  {
 	height: 100px;
 	width: 100px;
@@ -22,27 +27,100 @@ table {
 	font-size: 50px;
 }
 .box:hover {
-	background-color: black;	
+	background-color: black;
 }
 
 button {
 	height: 50px;
-	width: 200px;	
+	width: 200px;
 	font-size: 30px;
 	margin: auto;
 	display: block;
-	
+	font-family: 'Aclonica', sans-serif;
+
 }
 
 
 button:hover {
-	background-color: Black;
+	background-color: #FF8FAF;
 	color: white;
 
 
 }
 
 
+
+
+
+.container {
+	width: 100%;
+
+	position: relative;
+}
+.scoreX {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 200px;
+	left: 80px;
+	border: 2px solid black;
+	font-size: 30px;
+  display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.scoreO {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 200px;
+	right: 80px;
+	border: 2px solid black;
+	font-size: 30px;
+  display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 10px;
+}
+
+@media (max-width: 650px) {
+	.scoreX, .scoreO {
+		height: 20px;
+		width: 30px;
+		font-size: 10px;
+		position: absolute;
+		top: 70px;
+		position: absolute;
+    top: 244px;
+    margin: -75px;
+
+	}
+
+	table tr td {
+		width: 90px;
+		height: 90px;
+	}
+	button {
+		height: 25px;
+		width: 100px;
+		font-size: 10px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+
+	body {
+		background-color: lightgrey;
+		color: white;
+	}
+
+	.box {
+		font-size: 30px;
+	}
+}
 
 @keyframes zoomOut {
   from {
@@ -64,7 +142,6 @@ button:hover {
 }
 
 .red {
-	background-color: red;
+	background-color: #FF8FAF;
 	color: white;s
 }
-
