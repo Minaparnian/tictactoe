@@ -85,7 +85,7 @@ button:hover {
 	padding-top: 10px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 500px) {
 	.scoreX, .scoreO {
 		height: 20px;
 		width: 30px;
