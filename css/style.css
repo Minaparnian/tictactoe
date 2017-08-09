@@ -4,8 +4,8 @@ body {
 
 
 table tr td  {
-	height: 100px;
-	width: 100px;
+	height: 180px;
+	width: 180px;
 	border: 1px solid black;
 
 
@@ -59,11 +59,11 @@ button:hover {
 	position: relative;
 }
 .scoreX {
-	height: 50px;
+	height: 40px;
 	width: 50px;
 	position: absolute;
-	top: 200px;
-	left: 80px;
+	top: 635px;
+	left: 353px;
 	border: 2px solid black;
 	font-size: 30px;
   display: table-cell;
@@ -73,11 +73,11 @@ button:hover {
 }
 
 .scoreO {
-	height: 50px;
+	height: 40px;
 	width: 50px;
 	position: absolute;
-	top: 200px;
-	right: 80px;
+	top:635px;
+	right: 353px;
 	border: 2px solid black;
 	font-size: 30px;
   display: table-cell;
@@ -142,7 +142,7 @@ button:hover {
   animation: zoomOut 4s;
 }
 
-.red {
+/*.red {
 	background-color: #FF8FAF;
 	color: white;s
-}
+}*/
