@@ -1,18 +1,35 @@
 body {
 	font-family: 'Aclonica', sans-serif;
+	background-color: #bfd8d9;
 }
 
 
 table tr td  {
-	height: 180px;
-	width: 180px;
-	border: 1px solid black;
+	height: 160px;
+	width: 160px;
+	border: 3px solid #bfd8d9;
+	border-radius: 10px;
 
 
 }
 h1 {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
+	color: #bfd8d9;
+	font-size: 40px;
+
+}
+.scoreBox {
+	margin-left: 210px;
+	font-size: 30px;
+	margin-top: 0;
+	color: #bfd8d9;
+}
+
+.total {
+	display: inline-block;
+	padding-right: 100px;
+
 
 }
 
@@ -25,10 +42,11 @@ table {
 .box {
 	text-align: center;
 	font-size: 50px;
+	color: white;
 }
 .box:hover {
-	background-color: black;
-	color: white;
+	background-color: rgba(47, 79, 80, .8);
+	color: #1c2f30;
 }
 
 button {
@@ -38,55 +56,56 @@ button {
 	margin: auto;
 	display: block;
 	font-family: 'Aclonica', sans-serif;
+	border-radius: 10px;
 
 }
 
 
 button:hover {
-	background-color: #FF8FAF;
+	background-color: #cfe1e2;
 	color: white;
 
 
 }
 
 
-
-
-
 .container {
-	width: 100%;
-
-	position: relative;
+	width: 700px;
+  position: relative;
+	margin: 0 auto;
+	background-color: #263f40;
+	padding: 20px;
 }
 .scoreX {
 	height: 40px;
 	width: 50px;
+	float: left;
 	position: absolute;
-	top: 635px;
-	left: 353px;
-	border: 2px solid black;
+	top: 590px;
+  color: #cfe1e2;
 	font-size: 30px;
-  display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	padding-top: 10px;
 }
 
 .scoreO {
 	height: 40px;
 	width: 50px;
+	float: left;
 	position: absolute;
-	top:635px;
-	right: 353px;
-	border: 2px solid black;
+	top: 590px;
+  color: #cfe1e2;
 	font-size: 30px;
-  display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	padding-top: 10px;
 }
 
-@media (max-width: 375px) {
+
+
+h3 {
+	display: inline-block;
+	margin: 0 auto;
+	padding-top: 0;
+	padding-right: 10px;
+}
+
+@media (max-width: 611px) {
 	.scoreX, .scoreO {
 		height: 20px;
 		width: 30px;
@@ -123,26 +142,77 @@ button:hover {
 	}
 }
 
-@keyframes zoomOut {
-  from {
-    opacity: 1;
+
+@media (max-width: 375px) {
+	table tr td {
+		width: 320px;
+		height: 320px;
+	}
+}
+
+
+
+
+
+
+
+
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
-  50% {
+  0% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+
+	100% {
+		opacity: 0;
+		transform: translate3d(-3000px, 0, 0)
+	}
+
+
+}
+.bounceInLeft {
+  animation: bounceInLeft 2s ;
+}
+
+
+
+
+
+
+
+@keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    transform: translate3d(20px, 0, 0);
   }
 
   to {
     opacity: 0;
-  }
+    transform: translate3d(-2000px, 0, 0);
+	}
+
+
 }
 
-.zoomOut {
-  animation: zoomOut 4s;
+.bounceOutLeft {
+  animation: bounceOutLeft 2s;
 }
-
-/*.red {
-	background-color: #FF8FAF;
-	color: white;s
-}*/
