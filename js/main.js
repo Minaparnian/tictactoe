@@ -71,6 +71,8 @@ const resetgame = function() {
   }
 
 
+//UI/ DOM/////////////////////////////////
+
 
 
  // when the sound i stop is tell you who is the winner.
@@ -91,7 +93,7 @@ const resetgame = function() {
 });
 
 
-//UI/ DOM
+
 $(document).ready(function() {
 
   $('.box').on('click', function() {

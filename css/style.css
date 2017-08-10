@@ -57,13 +57,14 @@ button {
 	display: block;
 	font-family: 'Aclonica', sans-serif;
 	border-radius: 10px;
+	color: #bfd8d9;
 
 }
 
 
 button:hover {
 	background-color: #cfe1e2;
-	color: white;
+	color: #263f40;
 
 
 }
