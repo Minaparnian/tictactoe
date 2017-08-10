@@ -105,7 +105,7 @@ h3 {
 	padding-right: 10px;
 }
 
-@media (max-width: 611px) {
+@media (max-width: 800px) {
 	.scoreX, .scoreO {
 		height: 20px;
 		width: 30px;
@@ -143,12 +143,12 @@ h3 {
 }
 
 
-@media (max-width: 375px) {
+/*@media (max-width: 375px) {
 	table tr td {
 		width: 320px;
 		height: 320px;
 	}
-}
+}*/
 
 
 
@@ -216,3 +216,5 @@ h3 {
 .bounceOutLeft {
   animation: bounceOutLeft 2s;
 }
+
+/* we can use keyframes by link the animate file to html and then use the animation-name as a class to the things we want  to animate.
