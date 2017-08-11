@@ -104,7 +104,7 @@ const resetgame = function() {
 
 $(document).ready(function() {
 
-  $('.box').on('click', function() {
+  $('.box').on('click touchstart', function() {
 
     let position = $(this).context.id // this refer actual element we click on in this case is whichever box. and get the id form 0-8.         // console.log(position);
     if (boardArray[position] === 'X' || boardArray[position] === 'O') {
@@ -136,7 +136,8 @@ $(document).ready(function() {
 
 
 
-    //back to restgame function
+    /////back to resetgame function////////////////////////////////
+
     if (matchBoxes() === true) {
       resetgame();
       countScore()
@@ -153,7 +154,7 @@ $(document).ready(function() {
   })
 
 
-  ///////restart the page
+  ///////restart the page//////////////////////////////////////////////////
 
   $('.restart').one('click', function() {
     window.location.reload(true);
