@@ -1,6 +1,7 @@
 body {
 	font-family: 'Aclonica', sans-serif;
 	background-color: #bfd8d9;
+	cursor: pointer;
 }
 
 #timer {
