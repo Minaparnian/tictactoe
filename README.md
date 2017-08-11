@@ -57,6 +57,8 @@ Steps for making the brain and connecting it to bones and skin :
 7.  use $( document ).ready() in the first step of writing jQuery
 as the page can't be manipulated safely until the document is "ready so jQuery detects this state of readiness.
 
+8. set the timer function to count down while audio running for the player.
+
 
 
 
@@ -69,6 +71,7 @@ as the page can't be manipulated safely until the document is "ready so jQuery d
 * jQuery
 * Iterm
 * Atom
+* Version control(github)
 
 
 

@@ -4,6 +4,9 @@ let player1 = "X";
 let scoreX = "X";
 let score1 = 0;
 let score2 = 0;
+let counter = 0;
+let countTimer = null;
+let timeleft = 33;
 let boardArray = ["box0", "box1", "box2", "box3", "box4", "box5", "box6", "box7", "box8"];
 
 let matchBoxes = function() {
@@ -71,6 +74,7 @@ const resetgame = function() {
   }
 
 
+
 //UI/ DOM/////////////////////////////////
 
 
@@ -94,22 +98,45 @@ const resetgame = function() {
 
 
 
+
+
+
+
 $(document).ready(function() {
 
   $('.box').on('click', function() {
+
     let position = $(this).context.id // this refer actual element we click on in this case is whichever box. and get the id form 0-8.         // console.log(position);
     if (boardArray[position] === 'X' || boardArray[position] === 'O') {
       return; // exit. we change one to on an add this part to continue playing.
     }
     boardArray[position] = player1; //player1 is "X";
     let audio = $('#sound1')[0].play();
+    // set the timer to count from 33 to 0 .
+    var timer = $('#timer');
 
+      timer.html((timeleft - counter));
 
+      var timeIt = function()  {
+          counter ++;
+        timer.html((timeleft - counter));
+        console.log('counter', counter);
+        if (counter >= 33) {
+          clearInterval(countTimer);
+        }
+      }
+
+      if (counter === 0 && countTimer === null) {
+        console.log('starting timer');
+        countTimer = setInterval(timeIt, 1000)
+      }
 
 
     $(this).context.innerHTML = player1; //player1 is"X";
-    // $(this).context.innerHTML = palyer2;
 
+
+
+    //back to restgame function
     if (matchBoxes() === true) {
       resetgame();
       countScore()
@@ -124,6 +151,9 @@ $(document).ready(function() {
     }
 
   })
+
+
+  ///////restart the page
 
   $('.restart').one('click', function() {
     window.location.reload(true);
