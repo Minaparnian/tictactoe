@@ -20,6 +20,7 @@ table tr td  {
 	width: 160px;
 	border: 3px solid #bfd8d9;
 	border-radius: 10px;
+	cursor: pointer;
 
 
 }
@@ -205,7 +206,7 @@ h3 {
 .bounceInLeft {
   animation: bounceInLeft 2s ;
 }
-
+/*we can use forwards  after 2s to stop animation.*/
 
 
 
